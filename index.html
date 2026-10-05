@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaican Cuisine</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #fffdf7;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #006b3c, #f5c400, #ce1126);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 3px rgba(0,0,0,.35);
+        }
+
+        header p {
+            font-size: 1.15rem;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #111;
+            text-align: center;
+            padding: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 18px;
+        }
+
+        nav a:hover {
+            color: #f5c400;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .intro h2,
+        .about h2 {
+            color: #006b3c;
+            margin-bottom: 12px;
+        }
+
+        .intro p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .dishes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+            border-top: 6px solid #006b3c;
+        }
+
+        .card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card h3 {
+            color: #ce1126;
+            margin-bottom: 10px;
+            font-size: 1.35rem;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        .ingredients {
+            font-size: .95rem;
+        }
+
+        .about {
+            margin-top: 50px;
+            background: #f5f1df;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 7px solid #f5c400;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .card img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>Jamaican Cuisine</h1>
+    <p>A Taste of Jamaica: Five Favorite Dishes</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#dishes">Dishes</a>
+    <a href="#about">About</a>
+</nav>
+
+<main>
+    <section class="intro">
+        <h2>Welcome to Jamaican Cuisine</h2>
+        <p>
+            Jamaican food is known for bold flavors, rich spices, and comforting meals.
+            This website highlights five of my favorite Jamaican dishes and gives visitors
+            a quick introduction to each one.
+        </p>
+    </section>
+
+    <section id="dishes" class="dishes">
+
+        <article class="card">
+            <img src="oxtail.webp" alt="Jamaican oxtail served with rice and peas">
+            <div class="card-content">
+                <h3>Jamaican Oxtail with Rice and Peas</h3>
+                <p>
+                    Oxtail is slowly cooked until tender in a rich, flavorful gravy.
+                    It is traditionally enjoyed with Jamaican rice and peas.
+                </p>
+                <p class="ingredients">
+                    <strong>Common ingredients:</strong> oxtail, beans, rice, thyme,
+                    scallion, garlic, onion, peppers, and seasonings.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="curry-chicken.webp" alt="Jamaican curry chicken served with white rice">
+            <div class="card-content">
+                <h3>Jamaican Curry Chicken with White Rice</h3>
+                <p>
+                    Jamaican curry chicken combines tender chicken with aromatic
+                    curry spices and vegetables, served with fluffy white rice.
+                </p>
+                <p class="ingredients">
+                    <strong>Common ingredients:</strong> chicken, Jamaican curry powder,
+                    potato, onion, garlic, thyme, scallion, and peppers.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="curry-goat.webp" alt="Jamaican curry goat served with rice and peas">
+            <div class="card-content">
+                <h3>Jamaican Curry Goat with Rice and Peas</h3>
+                <p>
+                    Curry goat is a flavorful Jamaican favorite made by slowly
+                    cooking seasoned goat meat in a rich curry sauce.
+                </p>
+                <p class="ingredients">
+                    <strong>Common ingredients:</strong> goat meat, curry powder,
+                    potato, onion, garlic, thyme, scallion, and Scotch bonnet pepper.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="brown-stew.webp" alt="Jamaican brown stew chicken served with white rice">
+            <div class="card-content">
+                <h3>Jamaican Brown Stew with White Rice</h3>
+                <p>
+                    Brown stew chicken is cooked in a savory brown gravy with
+                    vegetables and Jamaican seasonings, making a hearty meal.
+                </p>
+                <p class="ingredients">
+                    <strong>Common ingredients:</strong> chicken, onion, garlic,
+                    thyme, tomato, peppers, browning, and Jamaican seasonings.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="patty.webp" alt="Golden Jamaican beef patties">
+            <div class="card-content">
+                <h3>Jamaican Patty</h3>
+                <p>
+                    The Jamaican patty is a popular pastry filled with seasoned
+                    meat inside a golden, flaky crust. It is a favorite quick meal
+                    or snack.
+                </p>
+                <p class="ingredients">
+                    <strong>Common ingredients:</strong> pastry dough, ground beef,
+                    onion, garlic, thyme, curry, peppers, and spices.
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <section id="about" class="about">
+        <h2>About This Website</h2>
+        <p>
+            The purpose of this website is to share knowledge about Jamaican food
+            and introduce visitors to some popular dishes. The site is designed for
+            food lovers, including people who already enjoy Jamaican cuisine and
+            people who have never tried it. The website was created as a Capstone
+            project using HTML and CSS.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p><strong>Jamaican Cuisine</strong></p>
+    <p>Capstone Project &bull; 2026</p>
+    <p>Food images selected and provided by the site author.</p>
+</footer>
+
+</body>
+</html>
